@@ -37,11 +37,11 @@
     }
   },
 
-  // Custom regex manager: track Cribl Edge version in host config
+  // Custom regex manager: track Cribl Edge version
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["hosts/macbook-m4/default\\.nix$"],
+      "managerFilePatterns": ["/packages/cribl-edge\\.nix$/"],
       "matchStrings": ["version = \"(?<currentValue>[^\"]+)\"; # cribl-edge"],
       "depNameTemplate": "cribl-edge",
       "datasourceTemplate": "custom.cribl-edge",

@@ -8,7 +8,7 @@
 }:
 stdenvNoCC.mkDerivation rec {
   pname = "cribl-edge";
-  version = "4.17.0-7e952fa7";
+  version = "4.17.0-7e952fa7"; # cribl-edge
 
   src = fetchurl {
     url = "https://cdn.cribl.io/dl/4.17.0/cribl-${version}-darwin-universal.pkg";
