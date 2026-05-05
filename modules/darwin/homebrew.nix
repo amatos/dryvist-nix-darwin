@@ -31,11 +31,18 @@
 # NOTE: nix-darwin does NOT support version pinning for individual homebrew packages.
 # To prevent upgrades for a specific package, pin it via `brew pin <package>`.
 
-{ lib, ... }:
+{ lib, nix-ai, ... }:
 
 let
   # 30 hours in seconds — brew autoupdate requires interval in seconds
   autoupdateInterval = 108000;
+
+  # Brew formulae required by per-agent nix-ai modules whose preferred
+  # install source is Homebrew (e.g. programs.qwen-code with
+  # installVia = "brew"). The list is owned by the agent's module in
+  # nix-ai and exported as a flake output, so each module stays
+  # self-contained. See nix-ai/docs/architecture/per-agent-flakes.md.
+  agentBrewFormulae = nix-ai.lib.brewFormulae or [ ];
 in
 {
   homebrew = {
@@ -71,7 +78,14 @@ in
       # Swift native on-device speech recognition (Apple Silicon, requires Xcode build - not in nixpkgs)
       # Pairs with whisper-cpp + openai-whisper (those are in nix-ai home.packages as Nix derivations)
       "whisperkit-cli"
-    ];
+    ]
+    # Append formulae required by nix-ai's per-agent modules. Currently:
+    # qwen-code (Alibaba's CLI agent — see modules/qwen-code in nix-ai).
+    # `lib.unique` deduplicates in case a formula migrates between the
+    # static list above and nix-ai's exported list during a transition
+    # — `brew bundle` is idempotent but the duplicate noise is worth
+    # eliminating at the Nix layer.
+    ++ lib.unique agentBrewFormulae;
     casks = [
       # GUI applications (only if not available in nixpkgs)
       #

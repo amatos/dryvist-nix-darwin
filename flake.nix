@@ -140,7 +140,12 @@
         assert _stateVersionCheck;
         darwin.lib.darwinSystem {
           system = "aarch64-darwin";
-          specialArgs = { };
+          # Pass nix-ai through so the homebrew module can pull
+          # `lib.brewFormulae` (formulae required by per-agent home-manager
+          # modules whose preferred install path is brew, e.g. qwen-code).
+          # Keeps the agent module self-contained for future flake graduation —
+          # see nix-ai/docs/architecture/per-agent-flakes.md.
+          specialArgs = { inherit nix-ai; };
           modules = [
             ./hosts/macbook-m4/default.nix
 
