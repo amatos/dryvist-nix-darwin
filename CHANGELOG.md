@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.33.0](https://github.com/JacobPEvans/nix-darwin/compare/v1.32.3...v1.33.0) (2026-05-05)
+
+
+### Features
+
+* **homebrew:** consume nix-ai lib.brewFormulae for per-agent formulae ([#1072](https://github.com/JacobPEvans/nix-darwin/issues/1072)) ([922f286](https://github.com/JacobPEvans/nix-darwin/commit/922f286c51194be6f57423ea8c56a69179d04dfa))
+
 ## [1.32.3](https://github.com/JacobPEvans/nix-darwin/compare/v1.32.2...v1.32.3) (2026-05-05)
 
 
