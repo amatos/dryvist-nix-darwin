@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.32.3](https://github.com/JacobPEvans/nix-darwin/compare/v1.32.2...v1.32.3) (2026-05-05)
+
+
+### Bug Fixes
+
+* **renovate:** correct cribl-edge customManager file path and schema ([#1071](https://github.com/JacobPEvans/nix-darwin/issues/1071)) ([54fa5e2](https://github.com/JacobPEvans/nix-darwin/commit/54fa5e2d1eacb10c15e8119b515a86d3c4fadde7))
+
 ## [1.32.2](https://github.com/JacobPEvans/nix-darwin/compare/v1.32.1...v1.32.2) (2026-05-04)
 
 
