@@ -56,7 +56,9 @@ in
       # Previously, nixpkgs installed a symlink to a /nix/store path that changes on
       # every rebuild, forcing TCC re-granting each time.
       package.enable = false;
-      background.enable = true;
+      # orb start exits 0 in <1s; KeepAlive=true was throttle-respawning it into
+      # a runningboardd assertion flood. OrbStack.app manages its own startup.
+      background.enable = false;
       dataVolume = {
         enable = true;
         name = "ContainerData";

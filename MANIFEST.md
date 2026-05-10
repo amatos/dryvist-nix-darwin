@@ -41,7 +41,6 @@ Source: `modules/darwin/common.nix`
 | jq | JSON parsing |
 | ncdu | NCurses disk usage analyzer |
 | ngrep | Network packet grep |
-| procps | Process utilities (pgrep, pkill) |
 | ripgrep | Fast grep alternative (rg) |
 | tldr | Simplified, community-driven man pages |
 | tree | Directory tree visualization |

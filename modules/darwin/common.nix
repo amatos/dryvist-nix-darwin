@@ -66,7 +66,6 @@ in
     # Network & process tools
     # ========================================================================
     ngrep # Network packet grep (useful for debugging)
-    procps # Process utilities including pgrep, pkill
 
     # ========================================================================
     # Audio libraries (system-level dependencies)
