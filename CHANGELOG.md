@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.34.1](https://github.com/JacobPEvans/nix-darwin/compare/v1.34.0...v1.34.1) (2026-05-10)
+
+
+### Bug Fixes
+
+* **launchd:** disable orbstack-background agent and remove procps shadow ([#1083](https://github.com/JacobPEvans/nix-darwin/issues/1083)) ([2beca55](https://github.com/JacobPEvans/nix-darwin/commit/2beca55d8ebdf39e8d37a53c8f5740951c2d752e))
+
 ## [1.34.0](https://github.com/JacobPEvans/nix-darwin/compare/v1.33.1...v1.34.0) (2026-05-10)
 
 
