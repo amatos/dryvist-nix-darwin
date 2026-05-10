@@ -185,6 +185,17 @@ in
         name = "libreoffice";
         greedy = true;
       }
+
+      # --- Out-of-band server management ---
+      # Java Web Start replacement for iDRAC6 vKVM .jnlp launches.
+      # iDRAC6 Virtual Console requires NPAPI Java plugin, dropped by all
+      # modern browsers (Chrome 2015, Safari, Firefox, Brave). OpenWebStart
+      # runs the .jnlp file that the iDRAC web UI downloads on "Launch Virtual
+      # Console".
+      {
+        name = "openwebstart";
+        greedy = true;
+      }
     ];
 
     # Mac App Store apps (requires signed into App Store)
