@@ -37,6 +37,7 @@ in
   nixpkgs.overlays = [
     (import ../../overlays/macos-apps.nix)
     (import ../../overlays/direnv-darwin-fix.nix) # TEMPORARY: NixOS/nix#6065
+    (import ../../overlays/python-darwin-test-fixes.nix) # TEMPORARY: pgvector + accelerate
   ];
 
   # --- User Configuration ---
