@@ -189,6 +189,7 @@ via LaunchAgent) always installs the latest version rather than deferring to bui
 | postman | yes | API development environment (moved from nixpkgs — version lag caused schema mismatch) |
 | orbstack | yes | Container/Linux VM runtime — cask for TCC permission stability |
 | microsoft-teams | yes | Teams desktop app (not available on Mac App Store) |
+| firefox | yes | Mozilla Firefox browser — cask for TCC permission stability |
 
 ### Mac App Store
 

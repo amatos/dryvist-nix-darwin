@@ -176,6 +176,15 @@ in
         greedy = true;
       }
 
+      # --- Browsers ---
+      # Firefox is in nixpkgs (firefox-bin) but installs to /nix/store/<hash>
+      # which changes every rebuild — resets macOS TCC grants (camera, mic,
+      # screen recording). Cask installs to stable /Applications/Firefox.app.
+      {
+        name = "firefox";
+        greedy = true;
+      }
+
       # --- Office Suite (for Claude document-skills) ---
       # LibreOffice provides the `soffice` CLI that /document-skills:{docx,xlsx,pptx}
       # use to convert Office docs to PDF. nixpkgs does NOT build libreoffice for
