@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.35.1](https://github.com/JacobPEvans/nix-darwin/compare/v1.35.0...v1.35.1) (2026-05-13)
+
+
+### Bug Fixes
+
+* **deps:** update jacobpevans-cc-plugins to 3.4.2 (git-guard -C fix) ([#1096](https://github.com/JacobPEvans/nix-darwin/issues/1096)) ([f055040](https://github.com/JacobPEvans/nix-darwin/commit/f05504009ccf8649cbf13c4e3aff6a790de4afff))
+
 ## [1.35.0](https://github.com/JacobPEvans/nix-darwin/compare/v1.34.3...v1.35.0) (2026-05-12)
 
 
