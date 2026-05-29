@@ -240,6 +240,10 @@ in
         name = "zed";
         greedy = true;
       }
+      {
+        name = "ghostty";
+        greedy = true;
+      }
     ];
 
     # Mac App Store apps (requires signed into App Store)
