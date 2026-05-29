@@ -32,10 +32,10 @@ in
     # Full name for git commits and other identity purposes
     fullName = "JacobPEvans-personal";
 
-    # Primary email (GitHub noreply for privacy).
-    # Uses the post-rename username form: the old `…+JacobPEvans@` noreply is no
-    # longer a verified email on the renamed account, which breaks GitHub
-    # signature verification (and signed-commit rulesets). Account id 20714140.
+    # Primary email (GitHub noreply for privacy)
+    # Account renamed JacobPEvans -> JacobPEvans-personal; the noreply email and
+    # signing key below must match the renamed account or commits fail signature
+    # verification (bad_email). fullName is display-only and does not affect it.
     email = "20714140+JacobPEvans-personal@users.noreply.github.com";
   };
 
@@ -53,9 +53,7 @@ in
   # NOTE: These are PUBLIC key identifiers, NOT private keys.
   # Safe to commit - GitHub displays these on every signed commit.
   gpg = {
-    # Primary signing key ID (public identifier).
-    # Rotated after the JacobPEvans -> JacobPEvans-personal rename; the old key
-    # 31652F22BF6AC286 produces "Unverified" signatures on the renamed account.
+    # Primary signing key ID (public identifier) for the JacobPEvans-personal account
     signingKey = "1335F5D082489BBA";
   };
 
