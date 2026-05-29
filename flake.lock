@@ -596,11 +596,11 @@
         "wakatime": "wakatime"
       },
       "locked": {
-        "lastModified": 1780028521,
-        "narHash": "sha256-XKQMd2UvFkSUGjqaTWKqDKmguTp1lfZfRXKOvS69CfA=",
+        "lastModified": 1780029521,
+        "narHash": "sha256-VrmoST5yrv/NglUF60mZaUjpjXw6ZacrTNMYgxeObw4=",
         "owner": "amatos",
         "repo": "dryvist-nix-ai",
-        "rev": "04588779ab11532ce3e1359d142de5aca05a5da5",
+        "rev": "e4945b1d6d78d063deb257082db4d5909c26889e",
         "type": "github"
       },
       "original": {
