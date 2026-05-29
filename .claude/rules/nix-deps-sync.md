@@ -29,7 +29,7 @@ When you've just merged changes in nix-home, nix-ai, or another JacobPEvans repo
 need nix-darwin to pick them up immediately — don't wait for Renovate:
 
 ```bash
-gh workflow run deps-update-flake.yml -f target=jacobpevans --repo JacobPEvans/nix-darwin
+gh workflow run deps-update-flake.yml -f target=jacobpevans --repo amatos/dryvist-nix-darwin
 ```
 
 This triggers `.github/workflows/deps-update-flake.yml` (target=jacobpevans) which:

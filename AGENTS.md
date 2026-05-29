@@ -98,9 +98,9 @@ and on-demand patterns.
 | Repo | Scope | Used via |
 | ---- | ----- | -------- |
 | **nix-darwin** (this repo) | macOS system config (Dock, Finder, Homebrew, security) | nix-darwin |
-| [nix-ai](https://github.com/JacobPEvans/nix-ai) | AI CLI ecosystem (Claude, Gemini, Copilot, MCP) | home-manager |
+| [nix-ai](https://github.com/amatos/dryvist-nix-ai) | AI CLI ecosystem (Claude, Gemini, Copilot, MCP) | home-manager |
 | [nix-devenv](https://github.com/JacobPEvans/nix-devenv) | Reusable dev shells (Terraform, Ansible, K8s, AI/ML) | nix develop |
-| [nix-home](https://github.com/JacobPEvans/nix-home) | User environment (dotfiles, dev tools, LaunchAgents) | home-manager |
+| [nix-home](https://github.com/amatos/dryvist-nix-home) | User environment (dotfiles, dev tools, LaunchAgents) | home-manager |
 
 ## PR Rules
 

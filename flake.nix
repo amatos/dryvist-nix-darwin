@@ -63,7 +63,7 @@
     # AI CLI ecosystem (Claude, Gemini, Copilot, MCP, marketplace)
     # Self-contained: injects its own flake inputs via _module.args
     nix-ai = {
-      url = "github:JacobPEvans/nix-ai";
+      url = "github:amatos/dryvist-nix-ai";
       inputs = {
         nixpkgs.follows = "nixpkgs";
         home-manager.follows = "home-manager";
@@ -77,7 +77,7 @@
 
     # Cross-platform home-manager modules (git, zsh, vscode, monitoring, shells)
     nix-home = {
-      url = "github:JacobPEvans/nix-home";
+      url = "github:amatos/dryvist-nix-home";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };

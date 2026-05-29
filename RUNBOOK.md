@@ -37,7 +37,7 @@ sudo darwin-rebuild --list-generations
 
 ## Shell Aliases
 
-Configured shell aliases make common tasks faster. All aliases are defined in nix-home (see [nix-home](https://github.com/JacobPEvans/nix-home) `modules/home-manager/zsh/aliases.nix`).
+Configured shell aliases make common tasks faster. All aliases are defined in nix-home (see [nix-home](https://github.com/amatos/dryvist-nix-home) `modules/home-manager/zsh/aliases.nix`).
 
 ### Directory Listing
 
@@ -773,15 +773,15 @@ sudo darwin-rebuild switch --flake ~/.config/nix
 - **System settings**: `hosts/<hostname>/default.nix`
 - **User settings**: `hosts/<hostname>/home.nix`
 - **Shared darwin settings**: `modules/darwin/common.nix`
-- **User dev tools**: nix-home (see [nix-home](https://github.com/JacobPEvans/nix-home))
-- **AI tools**: nix-ai (see [nix-ai](https://github.com/JacobPEvans/nix-ai))
+- **User dev tools**: nix-home (see [nix-home](https://github.com/amatos/dryvist-nix-home))
+- **AI tools**: nix-ai (see [nix-ai](https://github.com/amatos/dryvist-nix-ai))
 
 ---
 
 ## AI CLI Permissions
 
 AI CLI permissions (Claude, Gemini, Copilot) are now managed in nix-ai.
-See [nix-ai](https://github.com/JacobPEvans/nix-ai) for permission configuration.
+See [nix-ai](https://github.com/amatos/dryvist-nix-ai) for permission configuration.
 
 ### Quick Permission Approval
 
@@ -808,8 +808,8 @@ Workflow files:
 Look for the "Cache Nix Store" step in any CI run. It reports cache hit/miss and key:
 
 ```bash
-gh run list --repo JacobPEvans/nix-darwin --limit 5
-gh run view <run-id> --log --repo JacobPEvans/nix-darwin | grep -A5 "Cache Nix Store"
+gh run list --repo amatos/dryvist-nix-darwin --limit 5
+gh run view <run-id> --log --repo amatos/dryvist-nix-darwin | grep -A5 "Cache Nix Store"
 ```
 
 ### When CI Is Slow

@@ -61,7 +61,7 @@
         "nix-community/home-manager",
         "Mic92/sops-nix",
         "JacobPEvans/ai-assistant-instructions",
-        "JacobPEvans/nix-home"
+        "amatos/dryvist-nix-home"
       ],
       "groupName": "critical-infrastructure",
       "schedule": ["after 7am"],
@@ -77,7 +77,7 @@
         "anthropics/**",
         "obra/superpowers-marketplace",
         "JacobPEvans/claude-code-plugins",
-        "JacobPEvans/nix-ai"
+        "amatos/dryvist-nix-ai"
       ],
       "groupName": "ai-tools",
       "schedule": ["after 7am every day"]

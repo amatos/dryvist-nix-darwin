@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.38.1.1] (2026-05-28)
+
+
+### Features
+
+* **nixpkgs:** upgrade from NixOS 25.11 "Vicuna" to 26.05 "Warbler" across nixpkgs, nix-darwin, and home-manager flake inputs
+* **deps:** migrate flake inputs and repo references from JacobPEvans/nix-{ai,home,darwin} to amatos/dryvist-nix-{ai,home,darwin}
+
 ## [1.38.1](https://github.com/JacobPEvans/nix-darwin/compare/v1.38.0...v1.38.1) (2026-05-25)
 
 

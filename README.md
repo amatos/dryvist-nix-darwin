@@ -19,8 +19,8 @@ imported as flake inputs.
 | Repo | Scope | Installs via |
 | ---- | ----- | ------------ |
 | **nix-darwin** (this repo) | macOS system config (Dock, Finder, Homebrew, security) | nix-darwin |
-| [nix-ai](https://github.com/JacobPEvans/nix-ai) | AI CLI ecosystem (Claude, Gemini, Copilot, MCP) | home-manager |
-| [nix-home](https://github.com/JacobPEvans/nix-home) | User environment (dotfiles, dev tools, LaunchAgents) | home-manager |
+| [nix-ai](https://github.com/amatos/dryvist-nix-ai) | AI CLI ecosystem (Claude, Gemini, Copilot, MCP) | home-manager |
+| [nix-home](https://github.com/amatos/dryvist-nix-home) | User environment (dotfiles, dev tools, LaunchAgents) | home-manager |
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ imported as flake inputs.
 
 ```bash
 # 1. Clone as a bare repo (worktree convention used throughout ~/git/)
-git clone --bare https://github.com/JacobPEvans/nix-darwin.git ~/git/nix-darwin
+git clone --bare https://github.com/amatos/dryvist-nix-darwin.git ~/git/nix-darwin
 cd ~/git/nix-darwin
 
 # 2. Create the main worktree
@@ -116,8 +116,8 @@ Full details in [ARCHITECTURE.md](ARCHITECTURE.md).
 | **nix-darwin** | macOS packages, system settings, Homebrew integration |
 | **home-manager** | Activation recovery, config symlinks, and Raycast scripts |
 | **mac-app-util** | Stable app trampolines to preserve TCC permissions |
-| **[nix-ai](https://github.com/JacobPEvans/nix-ai)** | Shared home-manager modules for AI tools (Claude, Gemini, Copilot, MCP) |
-| **[nix-home](https://github.com/JacobPEvans/nix-home)** | Shared home-manager modules for dev environment (git, zsh, VS Code, tmux) |
+| **[nix-ai](https://github.com/amatos/dryvist-nix-ai)** | Shared home-manager modules for AI tools (Claude, Gemini, Copilot, MCP) |
+| **[nix-home](https://github.com/amatos/dryvist-nix-home)** | Shared home-manager modules for dev environment (git, zsh, VS Code, tmux) |
 | **sops-nix** | Decrypts age-encrypted secrets to `/run/secrets/` for system services |
 
 ## Secrets Management
@@ -163,9 +163,9 @@ Contributions welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 <!-- Badge references -->
 [license-img]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-link]: LICENSE
-[ci-gate-img]: https://github.com/JacobPEvans/nix-darwin/actions/workflows/ci-gate.yml/badge.svg
-[ci-gate-link]: https://github.com/JacobPEvans/nix-darwin/actions/workflows/ci-gate.yml
-[nix-build-img]: https://github.com/JacobPEvans/nix-darwin/actions/workflows/ci-nix.yml/badge.svg
-[nix-build-link]: https://github.com/JacobPEvans/nix-darwin/actions/workflows/ci-nix.yml
-[md-lint-img]: https://github.com/JacobPEvans/nix-darwin/actions/workflows/ci-markdownlint.yml/badge.svg
-[md-lint-link]: https://github.com/JacobPEvans/nix-darwin/actions/workflows/ci-markdownlint.yml
+[ci-gate-img]: https://github.com/amatos/dryvist-nix-darwin/actions/workflows/ci-gate.yml/badge.svg
+[ci-gate-link]: https://github.com/amatos/dryvist-nix-darwin/actions/workflows/ci-gate.yml
+[nix-build-img]: https://github.com/amatos/dryvist-nix-darwin/actions/workflows/ci-nix.yml/badge.svg
+[nix-build-link]: https://github.com/amatos/dryvist-nix-darwin/actions/workflows/ci-nix.yml
+[md-lint-img]: https://github.com/amatos/dryvist-nix-darwin/actions/workflows/ci-markdownlint.yml/badge.svg
+[md-lint-link]: https://github.com/amatos/dryvist-nix-darwin/actions/workflows/ci-markdownlint.yml
