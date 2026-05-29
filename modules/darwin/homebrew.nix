@@ -222,20 +222,64 @@ in
     # Find app IDs: mas search <name> or https://github.com/mas-cli/mas
     # Format: "App Name" = app_id;
     masApps = {
-      "Toggl Track" = 1291898086; # Time tracking
-      "Monarch Money Tweaks" = 6753774259; # Personal finance enhancements
-      "Windows App" = 1295203466; # Microsoft Remote Desktop / Windows 365 / AVD client
-      # NOTE: GoPro Quik (561350520) removed - no longer needed
-
-      # Microsoft 365 bundle (https://apps.apple.com/us/app-bundle/microsoft-365/id1450038993)
-      # NOTE: First-time install requires `sudo mas install <id>` due to TTY/sudo constraints
-      # Individual apps from the bundle - replaces any non-App Store versions
-      "Microsoft Word" = 462054704;
+      "1Password for Safari" = 1569813296;
+      "Acorn" = 6737921844;
+      "Amphetamine" = 937984704;
+      "Auto HD FPS for YouTube" = 1546729687;
+      "AutoMounter" = 1160435653;
+      "BookShelves" = 6756848973;
+      "Broadcasts" = 1469995354;
+      "Clean Links" = 6747395062;
+      "Code Peek+" = 6760186407;
+      "Compressor" = 6746516157;
+      "Developer" = 640199958;
+      "Drafts" = 1435957248;
+      "Dropover" = 1355679052;
+      "Due" = 524373870;
+      "Fantastical" = 975937182;
+      "Final Cut Pro" = 1631624924;
+      "Flix Fixer" = 6743055061;
+      "Front and Center" = 1493996622;
+      "Goban" = 646372172;
+      "Gomoku" = 457851462;
+      "Hyperduck" = 6444667067;
+      "Ivory" = 6444602274;
+      "John's Background Switcher" = 907640277;
+      "keymapp" = 6472865291;
+      "Keynote" = 361285480;
+      "LanguageTool" = 1534275760;
+      "Logic Pro" = 1615087040;
+      "MainStage" = 6746637089;
       "Microsoft Excel" = 462058435;
       "Microsoft PowerPoint" = 462062816;
-      "Microsoft Outlook" = 985367838;
-      "Microsoft OneNote" = 784801555;
+      "Microsoft Word" = 462054704;
+      "Motion" = 6746637149;
+      "NepTunes" = 1006739057;
+      "Numbers" = 361304891;
       "OneDrive" = 823766827;
+      "Pages" = 361309726;
+      "Pastel" = 413897608;
+      "PastePal" = 1503446680;
+      "Photomator" = 1444636541;
+      "Pixelmator Pro" = 6746662575;
+      "PopClip" = 445189367;
+      "Prompt" = 1594420480;
+      "Raycast Companion" = 6738274497;
+      "Save to Raindrop.io" = 1549370672;
+      "Simple Comic" = 1497435571;
+      "Sink It" = 6449873635;
+      "Steam Link" = 1246969117;
+      "StopTheMadness Pro" = 6471380298;
+      "Swift Playground" = 1496833156;
+      "Tailscale" = 1475387142;
+      "Things" = 904280696;
+      "Tidyshot" = 6758950886;
+      "Transmit" = 1436522307;
+      "uBlock Origin Lite" = 6745342698;
+      "Velja" = 1607635845;
+      "Windows App" = 1295203466;
+      "WireGuard" = 1451685025;
+      "Xcode" = 497799835;
     };
   };
 

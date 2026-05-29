@@ -10,7 +10,7 @@
 
 let
   # Define username once, derive everything else from it
-  username = "jevans";
+  username = "alberth";
 
   # Home directory path (derived from username for macOS)
   # macOS-specific - this configuration is Darwin-only
@@ -30,10 +30,10 @@ in
     inherit homeDir;
 
     # Full name for git commits and other identity purposes
-    fullName = "JacobPEvans";
+    fullName = "Alberth Matos";
 
     # Primary email (GitHub noreply for privacy)
-    email = "20714140+JacobPEvans@users.noreply.github.com";
+    email = "alberth@matos.cc";
   };
 
   # ==========================================================================
@@ -41,7 +41,7 @@ in
   # ==========================================================================
   host = {
     # Network hostname (used for networking.hostName, ComputerName, etc.)
-    name = "jevans-mbp";
+    name = "codex";
   };
 
   # ==========================================================================
@@ -51,7 +51,7 @@ in
   # Safe to commit - GitHub displays these on every signed commit.
   gpg = {
     # Primary signing key ID (public identifier)
-    signingKey = "31652F22BF6AC286";
+    signingKey = "F41BDBF6171A3BB4";
   };
 
   # ==========================================================================
@@ -84,7 +84,7 @@ in
     syslog = {
       # Remote syslog server for centralized log collection
       # Logs are forwarded via macOS built-in syslogd to HAProxy -> Cribl Edge -> Splunk
-      server = "haproxy.jacobpevans.com";
+      server = "haproxy.alberthmatos.com";
       port = 1514;
       # Protocol: udp or tcp
       protocol = "udp";
