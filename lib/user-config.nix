@@ -30,10 +30,13 @@ in
     inherit homeDir;
 
     # Full name for git commits and other identity purposes
-    fullName = "JacobPEvans";
+    fullName = "JacobPEvans-personal";
 
-    # Primary email (GitHub noreply for privacy)
-    email = "20714140+JacobPEvans@users.noreply.github.com";
+    # Primary email (GitHub noreply for privacy).
+    # Uses the post-rename username form: the old `…+JacobPEvans@` noreply is no
+    # longer a verified email on the renamed account, which breaks GitHub
+    # signature verification (and signed-commit rulesets). Account id 20714140.
+    email = "20714140+JacobPEvans-personal@users.noreply.github.com";
   };
 
   # ==========================================================================
@@ -50,8 +53,10 @@ in
   # NOTE: These are PUBLIC key identifiers, NOT private keys.
   # Safe to commit - GitHub displays these on every signed commit.
   gpg = {
-    # Primary signing key ID (public identifier)
-    signingKey = "31652F22BF6AC286";
+    # Primary signing key ID (public identifier).
+    # Rotated after the JacobPEvans -> JacobPEvans-personal rename; the old key
+    # 31652F22BF6AC286 produces "Unverified" signatures on the renamed account.
+    signingKey = "1335F5D082489BBA";
   };
 
   # ==========================================================================
@@ -110,10 +115,26 @@ in
   github = {
     tokens = {
       # Tiered GitHub PATs — each tier specifies its keychain service + DB.
-      # Restricted uses the unrestricted automation keychain (AI can access freely).
-      # Private/Admin use a password-protected keychain (requires user unlock).
+      # Auto-readable automation keychain (no password prompt; AI can access freely):
+      #   restricted → public repos
+      #   dryvist    → dryvist org repos (public + private) — the DEFAULT tier
+      # Password-protected keychain (requires interactive user unlock):
+      #   private    → JacobPEvans-personal public + private repos
+      #   admin      → JacobPEvans-personal admin (rulesets, branch protection)
+      #   orgAdmin   → dryvist org admin (org-level rulesets)
+      #
+      # NOTE: dryvist lives in the auto-readable keychain by deliberate choice —
+      # it is the default tier (see home.nix), so it must load without a password
+      # prompt on every shell. This means the dryvist token (write access to all
+      # dryvist repos) is freely readable by the user session and AI agents. This
+      # trades the former least-privilege RESTRICTED default for zero keychain
+      # popups, per an explicit decision on 2026-05-28.
       restricted = {
         service = "GH_PAT_RESTRICTED";
+        keychain = "automation.keychain-db";
+      };
+      dryvist = {
+        service = "GH_PAT_DRYVIST";
         keychain = "automation.keychain-db";
       };
       private = {
@@ -122,6 +143,10 @@ in
       };
       admin = {
         service = "GH_PAT_ADMIN";
+        keychain = "elevate-access.keychain-db";
+      };
+      orgAdmin = {
+        service = "GH_PAT_ORG_ADMIN";
         keychain = "elevate-access.keychain-db";
       };
     };
