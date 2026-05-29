@@ -78,20 +78,20 @@ in
     # Nix invokes Cribl Cloud's install-edge.sh on every rebuild and manages the LaunchDaemon.
     # Cribl Cloud manages all runtime configuration after enrollment.
     # Sensitive values (org ID, workspace ID, token) fetched from Doppler at activation time.
-    cribl-edge = {
-      enable = false;
-      cloud = {
-        secretsFile = config.sops.templates."cribl-edge.env".path;
-      };
-      packs = {
-        cc-edge-the-mac-pack-io = pkgs.fetchzip {
-          url = "https://github.com/JacobPEvans/cc-edge-the-mac-pack-io/releases/download/v0.3.0/cc-edge-the-mac-pack-io-v0.3.0.crbl";
-          extension = "tar.gz";
-          hash = "sha256-rPPAkedltxT8RWgP2xXil1o6x13HQK+SRgihuheJAks=";
-          stripRoot = false;
-        };
-      };
-    };
+    # cribl-edge = {
+    #   enable = false;
+    #   cloud = {
+    #     secretsFile = config.sops.templates."cribl-edge.env".path;
+    #   };
+    #   packs = {
+    #     cc-edge-the-mac-pack-io = pkgs.fetchzip {
+    #       url = "https://github.com/JacobPEvans/cc-edge-the-mac-pack-io/releases/download/v0.3.0/cc-edge-the-mac-pack-io-v0.3.0.crbl";
+    #       extension = "tar.gz";
+    #       hash = "sha256-rPPAkedltxT8RWgP2xXil1o6x13HQK+SRgihuheJAks=";
+    #       stripRoot = false;
+    #     };
+    #   };
+    # };
 
     # --- Streamline Login Items ---
     # Persistently disable unwanted updaters and remove junk plists.
