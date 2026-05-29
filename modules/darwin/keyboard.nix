@@ -13,7 +13,7 @@ _:
     # Delay before key repeat starts (lower = faster)
     # Default: 68 (about 1.18 seconds)
     # 25 = ~417ms, 15 = ~250ms
-    InitialKeyRepeat = 25;
+    InitialKeyRepeat = 68;
 
     # Key repeat rate once started (lower = faster)
     # Default: 6 (about 83ms between repeats)
@@ -40,6 +40,6 @@ _:
 
     # Disable press-and-hold for keys in favor of key repeat
     # Default: true (shows accented character popup)
-    ApplePressAndHoldEnabled = false;
+    ApplePressAndHoldEnabled = true;
   };
 }

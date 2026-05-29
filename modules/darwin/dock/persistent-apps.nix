@@ -26,39 +26,31 @@ in
     # Left side of Dock (before separator) - Main apps
     # ========================================================================
     persistent-apps = [
-      # Time & Tasks
-      "/System/Applications/Clock.app"
-      "/System/Applications/Reminders.app"
+      "/System/Applications/Apps.app"
+      "/Applications/Safari.app"
+      "/System/Applications/Mail.app"
+      "/System/Applications/Messages.app"
       "/System/Applications/Calendar.app"
-      "/Applications/Toggl Track.app"
+      "/System/Applications/Reminders.app"
+      "/System/Applications/Photos.app"
+      "/System/Applications/Music.app"
+      "/System/Applications/TV.app"
+      "/System/Applications/News.app"
+      "/System/Applications/App Store.app"
+      "/System/Applications/System Settings.app"
+      "/System/Applications/Preview.app"
 
-      # Knowledge & Notes (after Toggl)
+      # Knowledge & Notes
       "/Applications/Obsidian.app"
 
-      # Development & Tools (after Toggl)
+      # Development & Tools
+      "/Applications/Zed.app"
       "${homeDir}/Applications/Home Manager Apps/Ghostty.app"
-      "${homeDir}/Applications/Home Manager Apps/Visual Studio Code.app"
 
-      # Communication
-      "/Applications/Shortwave.app" # AI-powered email client (homebrew cask)
-      "/Applications/Microsoft Outlook.app"
-      "/Applications/Microsoft Teams.app"
-      "/Applications/Slack.app"
-      "/Applications/zoom.us.app" # Manual install - now at system level
       "${homeDir}/Applications/Home Manager Apps/Discord.app" # nixpkgs, copyApps for TCC stability
-      "/System/Applications/Messages.app"
 
       # AI Assistants
       "/Applications/Claude.app" # Anthropic Claude desktop app (homebrew cask)
-      "${homeDir}/Applications/Gemini.app" # Google Gemini AI assistant
-      "/Applications/Antigravity.app" # Google's AI-powered IDE (homebrew cask)
-
-      # Browsers
-      "/Applications/Safari.app"
-      "/Applications/Brave Browser.app"
-
-      # Remote Desktop
-      "/Applications/Windows App.app"
 
       # NOTE: Ollama runs headless via LaunchAgent, no dock icon needed.
       # NOTE: Additional AI tools (ChatGPT, Cursor) can be found in

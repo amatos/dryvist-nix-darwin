@@ -108,21 +108,21 @@ in
       # User-domain services to disable (updaters, redundant apps, broken daemons)
       disableUserServices = [
         "com.google.GoogleUpdater.wake" # Google hourly updater
-        "us.zoom.updater" # Zoom hourly updater
-        "us.zoom.updater.login.check" # Zoom login check at login
+        # "us.zoom.updater" # Zoom hourly updater
+        # "us.zoom.updater.login.check" # Zoom login check at login
         "com.ollama.ollama" # Redundant — vllm-mlx is primary inference server
         # Boot-time race condition daemons — crash-loop before dependencies ready,
         # corrupt WindowServer client dispatch table, cause sustained UI lag/freezes
-        "com.apple.universalaccessd" # No accessibility features enabled
-        "com.apple.macos.studentd" # Classroom daemon, no MDM enrollment
-        "com.apple.passd" # Apple Wallet not used
+        # "com.apple.universalaccessd" # No accessibility features enabled
+        # "com.apple.macos.studentd" # Classroom daemon, no MDM enrollment
+        # "com.apple.passd" # Apple Wallet not used
       ];
 
       # System-domain services to disable
       disableSystemServices = [
         "com.google.GoogleUpdater.wake.system" # Google system updater (hourly)
         "com.duosecurity.duoappupdater" # Duo updater (every 10 minutes)
-        "us.zoom.ZoomDaemon" # Zoom privileged helper daemon
+        # "us.zoom.ZoomDaemon" # Zoom privileged helper daemon
       ];
     };
   };
@@ -130,15 +130,15 @@ in
   # --- Apple Silicon Tunables ---
   # Wired-memory ceiling, App Nap, Spotlight + TM excludes for AI caches.
   # See modules/darwin/apple-silicon-tunables.nix for option semantics.
-  system.appleSiliconTunables.enable = false;
+  system.appleSiliconTunables.enable = true;
 
   # --- Energy & Sleep Configuration ---
   system.energy = {
     enable = true;
-    displaysleep = 30; # Display sleeps after 30 minutes
+    displaysleep = 15; # Display sleeps after 30 minutes
     sleep = {
       ac = 0; # Never sleep when plugged in (AC power)
-      battery = 60; # Sleep after 1 hour on battery
+      battery = 20; # Sleep after 1 hour on battery
     };
     # Set disksleep to non-zero when battery sleep is non-zero (Apple best practice)
     # This ensures optimal power state transition on battery (Safe Sleep requires this)

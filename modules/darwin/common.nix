@@ -77,9 +77,9 @@ in
     # ========================================================================
     # GUI applications (system-level, in /Applications/Nix Apps/)
     # ========================================================================
-    bitwarden-desktop # Password manager desktop app
+    # bitwarden-desktop # Password manager desktop app
     raycast # Productivity launcher (replaces Spotlight)
-    swiftbar # Menu bar customization
+    # swiftbar # Menu bar customization
   ];
 
   # --- Homebrew Configuration ---

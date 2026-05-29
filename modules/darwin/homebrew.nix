@@ -118,10 +118,10 @@ in
         name = "obsidian";
         greedy = true;
       } # Knowledge base / note-taking
-      {
-        name = "shortwave";
-        greedy = true;
-      } # AI-powered email client
+      # {
+      #   name = "shortwave";
+      #   greedy = true;
+      # } # AI-powered email client
       {
         name = "wispr-flow";
         greedy = true;
@@ -157,10 +157,10 @@ in
       }
 
       # --- Google Gemini ---
-      {
-        name = "antigravity";
-        greedy = true;
-      } # Google's AI-powered IDE (Gemini 3) - moved from nixpkgs for Gemini 3.1 Pro support
+      # {
+      #   name = "antigravity";
+      #   greedy = true;
+      # } # Google's AI-powered IDE (Gemini 3) - moved from nixpkgs for Gemini 3.1 Pro support
 
       # --- API Development ---
       {
@@ -182,10 +182,10 @@ in
 
       # --- Microsoft ---
       # Teams is only distributed via Homebrew (not available on Mac App Store).
-      {
-        name = "microsoft-teams";
-        greedy = true;
-      }
+      # {
+      #   name = "microsoft-teams";
+      #   greedy = true;
+      # }
 
       # --- Browsers ---
       # Firefox is in nixpkgs (firefox-bin) but installs to /nix/store/<hash>
@@ -193,6 +193,14 @@ in
       # screen recording). Cask installs to stable /Applications/Firefox.app.
       {
         name = "firefox";
+        greedy = true;
+      }
+      {
+        name = "zen";
+        greedy = true;
+      }
+      {
+        name = "helium-browser";
         greedy = true;
       }
 
@@ -212,8 +220,24 @@ in
       # modern browsers (Chrome 2015, Safari, Firefox, Brave). OpenWebStart
       # runs the .jnlp file that the iDRAC web UI downloads on "Launch Virtual
       # Console".
+      # {
+      #   name = "openwebstart";
+      #   greedy = true;
+      # }
       {
-        name = "openwebstart";
+        name = "betterdisplay";
+        greedy = true;
+      }
+      {
+        name = "linearmouse";
+        greedy = true;
+      }
+      {
+        name = "pearcleaner";
+        greedy = true;
+      }
+      {
+        name = "zed";
         greedy = true;
       }
     ];

@@ -43,20 +43,20 @@
   # Settings unique to this machine's user environment
 
   # Enable monitoring infrastructure (K8s manifests, helper scripts)
-  monitoring = {
-    enable = false;
-    kubernetes.enable = true;
-    otel = {
-      enable = true;
-      # endpoint defaults to http://localhost:30317 (NodePort gRPC)
-      logPrompts = true;
-      logToolDetails = true;
-      resourceAttributes = {
-        "host.name" = "macbook-m4";
-      };
-    };
-    cribl.enable = false;
-  };
+  # monitoring = {
+  #   enable = false;
+  #   kubernetes.enable = true;
+  #   otel = {
+  #     enable = true;
+  #     # endpoint defaults to http://localhost:30317 (NodePort gRPC)
+  #     logPrompts = true;
+  #     logToolDetails = true;
+  #     resourceAttributes = {
+  #       "host.name" = "macbook-m4";
+  #     };
+  #   };
+  #   cribl.enable = false;
+  # };
 
   programs = {
     claude = {
@@ -192,13 +192,13 @@
       rapidapi # Full-featured HTTP client for testing and describing APIs (sandboxed — auto-update prevention not possible)
 
       # AI IDEs & Tools (nixpkgs - stable TCC paths via copyApps)
-      code-cursor # Cursor AI IDE (VS Code fork)
+      # code-cursor # Cursor AI IDE (VS Code fork)
       chatgpt # OpenAI ChatGPT desktop app
       claudebar # Menu bar app for AI coding assistant quota monitoring
 
       # Communication
       discord # Voice/video chat - copyApps gives TCC-stable path for camera/mic permissions
-      # zoom-us # DISABLED - no longer using Zoom
+      zoom-us # DISABLED - no longer using Zoom
 
       # CLI / Media tools (non-GUI, no .app bundle)
       ffmpeg # Complete solution to record, convert and stream audio and video

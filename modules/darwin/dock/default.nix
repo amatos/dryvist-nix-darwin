@@ -21,7 +21,7 @@ _:
 
     # Enable icon magnification on hover
     # Default: false
-    magnification = true;
+    magnification = false;
 
     # Magnified icon size (16-128 pixels)
     # Default: 128
@@ -29,7 +29,7 @@ _:
 
     # Dock position on screen: "bottom", "left", or "right"
     # Default: "bottom"
-    orientation = "left";
+    orientation = "bottom";
 
     # ==========================================================================
     # Dock Behavior
@@ -37,17 +37,17 @@ _:
 
     # Automatically hide and show the Dock
     # Default: false
-    autohide = false;
+    autohide = true;
 
     # Delay before Dock shows when hidden (seconds)
     # Default: 0.24
     # Only applies when autohide = true
-    autohide-delay = 0.0;
+    autohide-delay = 0.24;
 
     # Animation speed for hide/show (seconds)
     # Default: 1.0
     # Lower = faster animation
-    autohide-time-modifier = 0.15;
+    autohide-time-modifier = 1.0;
 
     # Animate opening applications (bounce effect)
     # Default: true
@@ -66,11 +66,11 @@ _:
 
     # Minimize windows into their application icon
     # Default: false
-    minimize-to-application = true;
+    minimize-to-application = false;
 
     # Window minimize animation: "genie", "suck", or "scale"
     # Default: "genie"
-    mineffect = "scale";
+    mineffect = "genie";
 
     # Make hidden app icons translucent
     # Default: false
@@ -87,7 +87,7 @@ _:
     # Automatically rearrange Spaces based on most recent use
     # Default: true
     # false = keep spaces in fixed order
-    mru-spaces = false;
+    mru-spaces = true;
 
     # Group windows by application in Mission Control
     # Default: true
@@ -133,16 +133,16 @@ _:
     # Your current configuration:
 
     # Top-left corner: Mission Control
-    wvous-tl-corner = 2;
+    wvous-tl-corner = 1;
 
     # Top-right corner: Notification Center
-    wvous-tr-corner = 12;
+    wvous-tr-corner = 1;
 
     # Bottom-left corner: Application Windows (App Exposé)
-    wvous-bl-corner = 3;
+    wvous-bl-corner = 1;
 
     # Bottom-right corner: Quick Note
-    wvous-br-corner = 14;
+    wvous-br-corner = 1;
 
     # ==========================================================================
     # Advanced Options

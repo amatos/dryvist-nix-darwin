@@ -86,7 +86,7 @@ in
         {
           Weekday = 0; # 0 = Sunday per launchd.plist(5); both 0 and 7 are Sunday, 0 is conventional
           Hour = 3;
-          Minute = 15;
+          Minute = 14;
         }
       ];
       RunAtLoad = false;

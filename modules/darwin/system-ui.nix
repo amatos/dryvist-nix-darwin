@@ -8,16 +8,16 @@
   system.defaults = {
     # --- NSGlobalDomain Settings ---
     NSGlobalDomain = {
-      AppleInterfaceStyle = "Dark";
-      AppleInterfaceStyleSwitchesAutomatically = false;
+      AppleInterfaceStyle = "Automatic";
+      AppleInterfaceStyleSwitchesAutomatically = true;
       AppleShowScrollBars = "Automatic";
 
       # Text & Typing
-      NSAutomaticCapitalizationEnabled = false;
-      NSAutomaticDashSubstitutionEnabled = false;
-      NSAutomaticPeriodSubstitutionEnabled = false;
-      NSAutomaticQuoteSubstitutionEnabled = false;
-      NSAutomaticSpellingCorrectionEnabled = false;
+      NSAutomaticCapitalizationEnabled = true;
+      NSAutomaticDashSubstitutionEnabled = true;
+      NSAutomaticPeriodSubstitutionEnabled = true;
+      NSAutomaticQuoteSubstitutionEnabled = true;
+      NSAutomaticSpellingCorrectionEnabled = true;
       NSAutomaticInlinePredictionEnabled = true;
 
       # Windows & Dialogs
@@ -25,7 +25,7 @@
       NSNavPanelExpandedStateForSaveMode2 = true;
       PMPrintingExpandedStateForPrint = true;
       PMPrintingExpandedStateForPrint2 = true;
-      NSDocumentSaveNewDocumentsToCloud = false;
+      NSDocumentSaveNewDocumentsToCloud = true;
 
       # Animations
       NSAutomaticWindowAnimationsEnabled = true;
@@ -33,7 +33,7 @@
       NSUseAnimatedFocusRing = true;
 
       # Finder Sidebar - Icon size: 1=small, 2=medium, 3=large
-      NSTableViewDefaultSizeMode = 1;
+      NSTableViewDefaultSizeMode = 3;
 
       # Language & Region - Imperial system
       AppleTemperatureUnit = "Fahrenheit";
@@ -49,7 +49,7 @@
     menuExtraClock = {
       ShowDate = 1; # 0 = When space allows, 1 = Always, 2 = Never
       ShowDayOfWeek = true;
-      ShowSeconds = true;
+      ShowSeconds = false;
       Show24Hour = true; # Also set via AppleICUForce24HourTime
       IsAnalog = false; # false = digital, true = analog
     };
@@ -63,12 +63,12 @@
     # --- Screensaver & Lock ---
     screensaver = {
       askForPassword = true;
-      askForPasswordDelay = 0; # 0 = immediately
+      askForPasswordDelay = 5; # 0 = immediately
     };
 
     # --- Screenshots ---
     screencapture = {
-      # location = "/Users/${userConfig.user.name}/Screenshots";
+      location = "/Users/${userConfig.user.name}/Pictures/Screenshots";
       type = "png"; # png, jpg, gif, pdf, tiff
       disable-shadow = true;
       include-date = true;
@@ -79,7 +79,7 @@
       BatteryShowPercentage = true;
       Bluetooth = true;
       Sound = true;
-      Display = true;
+      Display = false;
       FocusModes = true;
       NowPlaying = true;
     };

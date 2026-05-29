@@ -14,7 +14,7 @@ _: {
     # Show hidden files (dotfiles) in Finder
     # Default: false
     # Power users: true
-    AppleShowAllFiles = true;
+    AppleShowAllFiles = false;
 
     # Show all file extensions
     # Default: false
@@ -39,12 +39,12 @@ _: {
     # Show full POSIX path in window title
     # Default: false
     # Example: "/Users/<username>/git/project" instead of "project"
-    _FXShowPosixPathInTitle = true;
+    _FXShowPosixPathInTitle = false;
 
     # Default view style for new windows
     # Options: "icnv" (Icon), "Nlsv" (List), "clmv" (Column), "Flwv" (Gallery)
     # Default: "icnv"
-    FXPreferredViewStyle = "Nlsv";
+    FXPreferredViewStyle = "icnv";
 
     # ==========================================================================
     # Sorting & Organization
@@ -52,11 +52,11 @@ _: {
 
     # Keep folders on top when sorting by name
     # Default: false
-    _FXSortFoldersFirst = true;
+    _FXSortFoldersFirst = false;
 
     # Keep folders on top on Desktop
     # Default: false
-    _FXSortFoldersFirstOnDesktop = true;
+    _FXSortFoldersFirstOnDesktop = false;
 
     # ==========================================================================
     # Search Behavior
@@ -136,10 +136,10 @@ _: {
   system.defaults.CustomUserPreferences = {
     "com.apple.finder" = {
       # Open new windows as tabs instead of new windows
-      FinderSpawnTab = true;
+      FinderSpawnTab = false;
 
       # Disable the "Are you sure you want to open this application?" dialog
-      # WarnOnApplicationOpen = false;
+      WarnOnApplicationOpen = true;
 
       # Column view settings
       # ColumnShowIcons = true;
@@ -155,7 +155,7 @@ _: {
 
     # Disable personalized ads (privacy)
     "com.apple.AdLib" = {
-      allowApplePersonalizedAdvertising = false;
+      allowApplePersonalizedAdvertising = true;
     };
   };
 }

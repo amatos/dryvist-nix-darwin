@@ -40,7 +40,7 @@ in
         raycastShouldFollowSystemAppearance = true;
 
         # Window mode: "default" or "compact"
-        raycastPreferredWindowMode = "compact";
+        raycastPreferredWindowMode = "default";
 
         # ========================================================================
         # Menu Bar
@@ -48,7 +48,7 @@ in
 
         # Show hyper key icon in menu bar
         # Default: false
-        useHyperKeyIcon = false;
+        useHyperKeyIcon = true;
 
         # ========================================================================
         # Window Behavior
