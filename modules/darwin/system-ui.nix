@@ -11,7 +11,7 @@ in
   system.defaults = {
     # --- NSGlobalDomain Settings ---
     NSGlobalDomain = {
-      AppleInterfaceStyle = "Automatic";
+      AppleInterfaceStyle = null;
       AppleInterfaceStyleSwitchesAutomatically = true;
       AppleShowScrollBars = "Automatic";
 
