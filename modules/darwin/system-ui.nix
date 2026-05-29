@@ -4,6 +4,9 @@
 # Reference: https://nix-darwin.github.io/nix-darwin/manual/options.html
 
 { lib, ... }:
+let
+  userConfig = import ../../lib/user-config.nix;
+in
 {
   system.defaults = {
     # --- NSGlobalDomain Settings ---
