@@ -621,11 +621,11 @@
         "orbstack-kubernetes": "orbstack-kubernetes"
       },
       "locked": {
-        "lastModified": 1780057978,
-        "narHash": "sha256-Ixn1J3mzpqWnrnngv4hQPIAxjfGfG1veHuIwMJpwHR0=",
+        "lastModified": 1780058025,
+        "narHash": "sha256-f293RhRpxdaaOXcrkPk8+ShDaeuACeG2Eo+1JS0pGw4=",
         "owner": "amatos",
         "repo": "dryvist-nix-home",
-        "rev": "4b064ab4df66bb67baa66893cededa8d87af7be9",
+        "rev": "d076b9b8502f40d412b104029272874a339c7e78",
         "type": "github"
       },
       "original": {
