@@ -44,7 +44,7 @@
 
   # Enable monitoring infrastructure (K8s manifests, helper scripts)
   monitoring = {
-    enable = true;
+    enable = false;
     kubernetes.enable = true;
     otel = {
       enable = true;
@@ -55,7 +55,7 @@
         "host.name" = "macbook-m4";
       };
     };
-    cribl.enable = true;
+    cribl.enable = false;
   };
 
   programs = {
@@ -75,7 +75,7 @@
             "fetch" # Duplicates built-in WebFetch tool
             "git" # Duplicates built-in git via Bash(git:*)
             "github" # Duplicates github@claude-plugins-official plugin
-            "cribl" # Project-specific — available via per-project .mcp.json
+            # "cribl" # Project-specific — available via per-project .mcp.json
             "terraform" # Project-specific — available via per-project .mcp.json
             "cloudflare" # Not actively used — disable until needed
             "exa" # Not actively used — disable until needed

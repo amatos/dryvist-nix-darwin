@@ -79,7 +79,7 @@ in
     # Cribl Cloud manages all runtime configuration after enrollment.
     # Sensitive values (org ID, workspace ID, token) fetched from Doppler at activation time.
     cribl-edge = {
-      enable = true;
+      enable = false;
       cloud = {
         secretsFile = config.sops.templates."cribl-edge.env".path;
       };

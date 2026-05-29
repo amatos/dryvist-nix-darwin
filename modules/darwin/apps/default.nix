@@ -11,7 +11,7 @@ _:
   imports = [
     ./ai-volumes.nix
     ./auto-update-prevention.nix
-    ./cribl-edge.nix
+    # ./cribl-edge.nix
     ./orbstack.nix
     ./raycast.nix
     ./streamline-login.nix

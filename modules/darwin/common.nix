@@ -20,7 +20,7 @@ in
     ./homebrew.nix
     ./keyboard.nix
     ./launchd-bootstrap.nix
-    ./logging.nix # Syslog forwarding to remote server
+    # ./logging.nix # Syslog forwarding to remote server
     ./boot-activation.nix # Creates /run/current-system at boot
     ./auto-recovery.nix
     ./security.nix
@@ -28,8 +28,8 @@ in
     ./system-ui.nix
     ./activation-error-tracking.nix
     ./nix-storage.nix
-    ./ws-monitor.nix
-    ./apple-silicon-tunables.nix
+    # ./ws-monitor.nix
+    # ./apple-silicon-tunables.nix
   ];
 
   # --- Nixpkgs Configuration ---
