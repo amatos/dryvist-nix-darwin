@@ -15,7 +15,7 @@ This repository uses automated daily flake updates via GitHub Actions workflow (
 
 The following inputs update daily:
 
-- `nixpkgs` (stable 25.11 channel)
+- `nixpkgs` (stable 26.05 channel)
 - `ai-assistant-instructions` (source of truth for AI agent config)
 - `claude-code-plugins` (official Anthropic)
 - `claude-cookbooks` (Anthropic cookbooks)

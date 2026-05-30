@@ -48,7 +48,7 @@ CRITICAL_PACKAGES=(
 # NOTE: With depth-1 checking, only direct inputs are iterated — most transitive
 # exemptions are no longer needed.
 EXEMPT_PACKAGES=(
-  "darwin"          # Pinned to nix-darwin-25.11 stable branch — infrequent backports
+  "darwin"          # Pinned to nix-darwin-26.05 stable branch — infrequent backports
   "systems"         # nix-systems/default-darwin — rarely updated
   "pal-mcp-server"  # Upstream repo (BeehiveInnovations) — infrequent releases
 )

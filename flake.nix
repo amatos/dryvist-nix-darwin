@@ -3,22 +3,22 @@
   description = "nix-darwin configuration for M4 Max MacBook Pro";
 
   inputs = {
-    # Using stable nixpkgs-25.11 for reliability
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-25.11-darwin";
+    # Using stable nixpkgs-26.05 for reliability
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-26.05-darwin";
 
     # Consolidated systems input for darwin-only configuration
     # All transitive dependencies should follow this to avoid duplicate systems entries
     systems.url = "github:nix-systems/default-darwin";
 
-    # Using stable nix-darwin-25.11 to match nixpkgs
+    # Using stable nix-darwin-26.05 to match nixpkgs
     darwin = {
-      url = "github:nix-darwin/nix-darwin/nix-darwin-25.11";
+      url = "github:nix-darwin/nix-darwin/nix-darwin-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Using stable home-manager release-25.11 to match nixpkgs
+    # Using stable home-manager release-26.05 to match nixpkgs
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.11";
+      url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -124,7 +124,7 @@
       # with a clear message — the fix is to update lib/user-config.nix.
       _stateVersionCheck =
         let
-          expected = "25.11"; # must match nixpkgs URL: nixpkgs-25.11-darwin
+          expected = "26.05"; # must match nixpkgs URL: nixpkgs-26.05-darwin
           actual = userConfig.nix.homeManagerStateVersion;
         in
         assert
