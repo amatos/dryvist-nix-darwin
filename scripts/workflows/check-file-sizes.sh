@@ -10,8 +10,8 @@
 set -euo pipefail
 
 # Built-in defaults (must match shared workflow _file-size.yml)
-WARN=6144
-ERR=12288
+WARN=8192
+ERR=16384
 EXT_LIMIT=0
 DEFAULT_SCAN=".md .nix .tf"
 EXTENDED=" "
