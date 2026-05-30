@@ -197,11 +197,9 @@
     # See hosts/macbook-m4/default.nix for OrbStack configuration.
     packages = with pkgs; [
       # Terminal & Development
-      ghostty-bin # Terminal emulator - needs Full Disk Access for darwin-rebuild
       rapidapi # Full-featured HTTP client for testing and describing APIs (sandboxed — auto-update prevention not possible)
 
       # AI IDEs & Tools (nixpkgs - stable TCC paths via copyApps)
-      # code-cursor # Cursor AI IDE (VS Code fork)
       chatgpt # OpenAI ChatGPT desktop app
       claudebar # Menu bar app for AI coding assistant quota monitoring
 

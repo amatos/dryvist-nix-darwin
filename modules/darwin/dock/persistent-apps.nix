@@ -45,8 +45,7 @@ in
 
       # Development & Tools
       "/Applications/Zed.app"
-      "${homeDir}/Applications/Home Manager Apps/Ghostty.app"
-
+      "/Applications/Ghostty.app"
       "${homeDir}/Applications/Home Manager Apps/Discord.app" # nixpkgs, copyApps for TCC stability
 
       # AI Assistants
