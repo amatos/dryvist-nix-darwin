@@ -56,6 +56,9 @@ in
     git
     gnupg
     vim
+    nh
+    nil
+    nixd
 
     # ========================================================================
     # macOS-specific system tools
