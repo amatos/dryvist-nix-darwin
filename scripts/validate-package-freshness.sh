@@ -51,6 +51,7 @@ EXEMPT_PACKAGES=(
   "darwin"          # Pinned to nix-darwin-26.05 stable branch — infrequent backports
   "systems"         # nix-systems/default-darwin — rarely updated
   "pal-mcp-server"  # Upstream repo (BeehiveInnovations) — infrequent releases
+  "mac-app-util" # Infrequent updates
 )
 
 # Check if flake.lock exists
